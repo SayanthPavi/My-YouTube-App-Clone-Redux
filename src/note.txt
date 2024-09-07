@@ -1,0 +1,9 @@
+#Layout 
+ - head 
+ -Body 
+    -Sidebar
+        MenuItems
+    -MainContainer
+        ButtonsList
+        VideoContainer
+            VideoCard    
