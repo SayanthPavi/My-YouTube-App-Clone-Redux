@@ -1,8 +1,23 @@
 import React from 'react'
+import Button from './Button'
 
-const ButtonList = () => {
+const ButtonList = (prpos) => {
   return (
-    <div className="border border-red-500 ">ButtonList</div>
+    <div className="flex">
+      <Button name="All" />
+      <Button name="Gaming" />
+      <Button name="Songs" />
+      <Button name="Live" />
+      <Button name="Cricket" />
+      <Button name="Cooking" />
+      <Button name="Sports" />
+      <Button name="Movies" />
+      <Button name="Football" />
+      <Button name="Tamil songs" />
+      <Button name="Music" />
+     
+    </div>
+
   )
 }
 
