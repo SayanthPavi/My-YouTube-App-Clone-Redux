@@ -3,7 +3,7 @@ import Button from './Button'
 
 const ButtonList = (prpos) => {
   return (
-    <div className="flex">
+    <div className="flex pt-3 justify-center">
       <Button name="All" />
       <Button name="Gaming" />
       <Button name="Songs" />
