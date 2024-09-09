@@ -1,13 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 // import store from "../Utils/store";
 
 const Sidebar = () => {
-    const isMenuOpen = useSelector((store) => store.app.isMenuOpen)
-  return !isMenuOpen ? null :(
-    <div className="w-48 h-full ps-7 pe-8 pt-8 shadow-lg fixed left-0  bg-white">
-      <ul>
-        <li>Home</li>
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+  return !isMenuOpen ? null : (
+    <div className="w-48 h-screen ps-7 pe-10 pt-8 shadow-lg sticky left-0  bg-white">
+      <ul className="cursor-pointer">
+        <li ><Link to={"/"}>Home</Link></li>
         <li>Shorts</li>
         <li>Videos</li>
         <li>Live</li>
